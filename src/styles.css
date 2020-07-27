@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  background-color: #264653;
+
+}
+
+.board{
+  position: absolute;
+  background-color:#E9C46A;
+  max-width: fit-content;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.title{
+  padding: 10px;
+}
+.description{
+  padding: 5px;
+}
