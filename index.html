@@ -6,9 +6,12 @@
   </head>
 
   <link rel="stylesheet"href="./src/styles.css"></link>
-  <script src="src/main.js"></script>
   
   <body>
+    <script type="module">
+      import {plus} from './src/main.js'
+      plus()
+    </script>
 
     
 
@@ -21,6 +24,10 @@
         <div class='resizer bottom-left'></div>
         <div class='resizer bottom-right'></div>
       </div>
+    </div>
+    
+    <div class="plus" onclick="plus()"> 
+      <img src="/src/assets/more.svg" class="icon">
     </div>
 
     <script>

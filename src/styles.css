@@ -76,13 +76,42 @@ html {
   margin: 5px;
 }
 .description{
+  display: grid;
   margin-left: 10px;
   margin-right:10px ;
-  text-align: start;
+  text-align: justify;
   text-justify: distribute;
   max-width: fit-content;
   max-height: fit-content;
 
-  min-width: fit-content;
-  min-height: min-content;
 }
+
+.plus{
+  position: fixed;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  margin: 30px;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: ease-in-out; 
+  -webkit-transition: all 0.3s;
+
+  
+}
+.plus:hover{
+  opacity: 120%;
+  box-shadow: 0 1px 29px rgba(0, 0, 0, 0.856);
+  transform: scale(1.2);
+}
+
+.icon{
+  color: #2d2d2d;
+  width: 40px;
+  height:40px;
+}
+
+
+
