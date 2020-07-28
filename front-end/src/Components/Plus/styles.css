@@ -1,0 +1,30 @@
+
+.plus{
+  position: fixed;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  margin: 30px;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: ease-in-out; 
+  -webkit-transition: all 0.3s;
+
+  
+}
+.plus:hover{
+  opacity: 120%;
+  box-shadow: 0 1px 29px rgba(0, 0, 0, 0.856);
+  transform: scale(1.2);
+}
+
+.plusIcon{
+  color: #2d2d2d;
+  width: 40px;
+  height:40px;
+}
+
+
+

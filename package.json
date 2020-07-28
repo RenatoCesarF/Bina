@@ -1,21 +1,16 @@
 {
-  "name": "vanilla",
+  "name": "bina",
   "version": "1.0.0",
-  "description": "JavaScript example starter project",
-  "main": "index.html",
+  "description": "The better organizer tool to diagram your project. Be it a book, a game, a site, a software.",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    
+  "repository": "git+https://github.com/RenatoCesarF/Bina.git",
+  "author": "Renato <re.fbarcellos@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenatoCesarF/Bina/issues"
   },
-  "devDependencies": {
-    "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
-  },
-  "keywords": [
-    "javascript",
-    "starter"
-  ]
+  "homepage": "https://github.com/RenatoCesarF/Bina#readme"
 }

@@ -1,0 +1,23 @@
+
+
+
+.board{
+  background: #E9C46A;
+}
+
+
+.title{
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+.description{
+  display: grid;
+  margin-left: 10px;
+  margin-right:10px ;
+  text-align: justify;
+  text-justify: distribute;
+  max-width: fit-content;
+  max-height: fit-content;
+
+}
