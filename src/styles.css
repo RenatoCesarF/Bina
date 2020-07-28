@@ -1,24 +1,88 @@
-*{
-  margin: 0;
+
+body,
+html {
+  background: #264653;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.resizable {
+  background: #E9C46A;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
 
-body{
-  background-color: #264653;
+  min-width: fit-content;
+  min-height: fit-content;
+}
+
+.resizable .resizers{
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.308);
+  box-sizing: border-box;
+
+  min-width: fit-content;
+  min-height: fit-content;
 
 }
 
+.resizable .resizers .resizer{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  position: absolute;
+
+
+  min-width: min-content;
+  min-height: fit-content
+}
+
+.resizable .resizers .resizer.top-left {
+  left: 2px;
+  top: 2px;
+  cursor: nwse-resize; /*resizer cursor*/
+}
+.resizable .resizers .resizer.top-right {
+  right: 2px;
+  top: 2px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-left {
+  left: 2px;
+  bottom: 2px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-right {
+  right: 2px;
+  bottom: 2px;
+  cursor: nwse-resize;
+}
+
+/*
 .board{
   position: absolute;
   background-color:#E9C46A;
   max-width: fit-content;
-  cursor: pointer;
+  
   border-radius: 5px;
 }
+*/
 
 .title{
-  padding: 10px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
 }
 .description{
-  padding: 5px;
+  margin-left: 10px;
+  margin-right:10px ;
+  text-align: start;
+  text-justify: distribute;
+  max-width: fit-content;
+  max-height: fit-content;
+
+  min-width: fit-content;
+  min-height: min-content;
 }
