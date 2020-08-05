@@ -13,8 +13,8 @@
 }
 .description{
   display: grid;
-  margin-left: 10px;
-  margin-right:10px ;
+  margin-left: 1%;
+  margin-right:1% ;
   text-align: justify;
   text-justify: distribute;
   max-width: fit-content;
