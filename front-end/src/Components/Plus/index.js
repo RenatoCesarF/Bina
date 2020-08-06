@@ -2,6 +2,7 @@ import React from 'react'
 import './styles.css';
 import {AiOutlinePlus} from 'react-icons/ai'
 
+//onClick() => open modal windows with new options
 
 //função que retorna o footer/rodapé da pagina
 function Plus() {

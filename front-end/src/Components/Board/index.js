@@ -30,9 +30,7 @@ function Board() {
       mesmo após ter pensado não ser capaz.E que realmente a vida tem seu valor,
       e, você, o seu próprio e inquestionável valor perante a vida.
     </p>
-      <div className='k'>
 
-      </div>
   </Rnd>
   )
 }
