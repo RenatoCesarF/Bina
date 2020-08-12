@@ -3,6 +3,7 @@
 
 .board{
   background: #E9C46A;
+  z-index: 4;
 }
 
 
@@ -10,14 +11,16 @@
   text-align: center;
   padding: 5px;
   margin: 5px;
+  z-index: 4;
 }
 .description{
   display: grid;
-  margin-left: 1%;
-  margin-right:1% ;
+  margin-left: 3%;
+  margin-right:3% ;
   text-align: justify;
   text-justify: distribute;
   max-width: fit-content;
   max-height: fit-content;
+  z-index: 4;
 
 }

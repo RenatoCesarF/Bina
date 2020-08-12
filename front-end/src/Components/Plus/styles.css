@@ -28,3 +28,15 @@
 
 
 
+/*=================  Modal  ==================*/
+.modal{
+  background-color: #C4C4C4;
+  z-index: 1;
+  width:200px;
+  height: 400px;
+  position: absolute;
+  right: 1%;
+  bottom: 5px;
+
+}
+
