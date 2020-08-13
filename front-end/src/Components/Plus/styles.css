@@ -4,7 +4,7 @@
   border-radius: 50%;
   background-color: #C4C4C4;
   bottom: 0;
-  right: 0;
+  right: 30px;
   padding: 20px;
   margin: 30px;
 
@@ -36,7 +36,44 @@
   height: 400px;
   position: absolute;
   right: 1%;
-  bottom: 5px;
-
+  top: 240px;
+  border-radius:10px
 }
+
+.item{
+  text-decoration: none;
+  line-height: 60px;
+  cursor: pointer;  
+}
+
+.itemText{
+  justify-content: flex-end;
+  font-size: 20px;
+  display: inline-block;
+  color: #2d2d2d;
+}
+
+.itemSymble{
+  margin-right: 20px;
+  margin-left: 20px;
+  vertical-align: middle;
+  align-self: flex-start;
+  color: #2d2d2d;
+  
+}
+
+.line{
+  border-color: #2d2d2d38;
+}
+
+.Xicon{
+  margin-top: 50%;
+  margin-left: 42%;
+  width: 40px;
+  height:40px;
+  transform: rotate(45deg);
+  color: #2d2d2d;
+  cursor: pointer;  
+}
+
 

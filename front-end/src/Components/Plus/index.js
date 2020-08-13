@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
-import './styles.css';
+import { Modal} from 'react-bootstrap'
 import { AiOutlinePlus } from 'react-icons/ai'
-import { Modal, Button } from 'react-bootstrap'
-
+import {FaRegCommentAlt,FaImage,FaReply} from 'react-icons/fa'
+import {BsCardText} from 'react-icons/bs'
+import './styles.css';
 //onClick() => open modal windows with new options
 
 //função que retorna o footer/rodapé da pagina
@@ -14,22 +15,51 @@ function Plus() {
 
   return (
     < >
-    <div
-      className="plus"
-      variant="primary"
-      onClick={handleShow}
-    >
-      <AiOutlinePlus className='plusIcon' />
+      <div
+        className="plus"
+        onClick={handleShow}
+      >
+        <AiOutlinePlus className='plusIcon' />
 
-    </div>
-      <Modal show={show} onHide={handleClose} animation={false} className='modal'>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-        </Modal.Footer>
-    </Modal>
+      </div>
+      
+      <Modal
+        show={show}
+        onHide={handleClose}
+        animation={false}
+        className='modal'
+        backdrop="true"
+      >
+        <form> 
+        
+          <div className="item"> 
+            <FaReply className="itemSymble" size={25}/>
+            <h3 className="itemText">Arrow</h3>
+            <hr className="line"/>
+          </div>
+
+          <div className="item"> 
+            <FaRegCommentAlt className="itemSymble" size={25}/>
+            <h3 className="itemText">Comentary</h3 >
+            <hr className="line"/>
+          </div>
+
+          <div className="item"> 
+            <FaImage  className="itemSymble" size={25}/>
+            <h3 className="itemText">Image</h3 >
+            <hr className="line"/>
+          </div>
+
+          <div className="item"> 
+            <BsCardText className="itemSymble" size={25}/>
+            <h3 className="itemText">Card</h3 >
+            <hr className="line"/>
+          </div>
+
+        </form>
+        <AiOutlinePlus className='Xicon' onClick={handleClose} />
+      </Modal>
+
     </>
   )
 }
