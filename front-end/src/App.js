@@ -7,7 +7,7 @@ import Plus from './Components/Plus/index'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" >
       <Board/>
       <Plus />
     </div>
