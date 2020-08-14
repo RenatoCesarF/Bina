@@ -1,12 +1,15 @@
 import React, {useState} from 'react'
-import { Modal} from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
+
+//Importing some icons
 import { AiOutlinePlus } from 'react-icons/ai'
 import {FaRegCommentAlt,FaImage,FaReply} from 'react-icons/fa'
-import {BsCardText} from 'react-icons/bs'
-import './styles.css';
-//onClick() => open modal windows with new options
+import { BsCardText } from 'react-icons/bs'
 
-//função que retorna o footer/rodapé da pagina
+import './styles.css';
+
+
+
 function Plus() {
   const [show, setShow] = useState(false);
 
@@ -26,16 +29,14 @@ function Plus() {
       <Modal
         show={show}
         onHide={handleClose}
-        animation={false}
+        animation={true}
         className='modal'
         backdrop="true"
-        autoFocus="false"
-        enforceFocus="false"
       >
         <form> 
         
           <div className="item"> 
-            <FaReply className="itemSymble" size={25} />
+            <FaReply className="itemSymble" size={25}/>
             <h3 className="itemText">Arrow</h3>
             <hr className="line"/>
           </div>
@@ -66,5 +67,4 @@ function Plus() {
   )
 }
 
-//exportação da função de rodapé
 export default Plus;
