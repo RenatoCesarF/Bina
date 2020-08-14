@@ -29,11 +29,13 @@ function Plus() {
         animation={false}
         className='modal'
         backdrop="true"
+        autoFocus="false"
+        enforceFocus="false"
       >
         <form> 
         
           <div className="item"> 
-            <FaReply className="itemSymble" size={25}/>
+            <FaReply className="itemSymble" size={25} />
             <h3 className="itemText">Arrow</h3>
             <hr className="line"/>
           </div>
