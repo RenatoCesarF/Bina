@@ -11,6 +11,7 @@ import './styles.css';
 
 
 function Plus() {
+  //TODO: make one function for each option 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -31,7 +32,6 @@ function Plus() {
         onHide={handleClose}
         animation={true}
         className='modal'
-        backdrop="true"
       >
         <form> 
         
